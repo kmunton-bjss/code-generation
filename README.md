@@ -20,6 +20,7 @@ Then I used the code generation tools to:
 - Create a REST controller to return the fibonacci sequence
 - Create unit tests for that controller
 - Explain the architecture of the application
+- Create CalculatorController class and CalculatorService class based unit tests written by a developer
 
 
 ## Prompts / Approach used for code generation
@@ -43,6 +44,12 @@ Chat prompt: Based on the codebase here, can you explain the architecture?
 ### Code explanation
 
 Used the code explanation tool provided by both Github Copilot and Cody to explain the DemoApplication.java file.
+
+### Calculator classes
+
+chat prompt: Create CalculatorService class based on CalculatorControllerTest class and create a CalculatorController class based on CalculatorControllerTest class. 
+Check if the parameters are valid in the controller before passing them to the service. Include the validation and error handling based on the unit tests. 
+Each endpoint in the CalculatorController should return the answer in a json object with an "answer" key. The types of all numbers are integers
 
 ## Results
 
@@ -69,6 +76,15 @@ All good things, couldn't fault it.
 
 + The copilot /explain command was able to explain the code in the DemoApplication.java file.
 ![gh-copilot-code-explain.png](gh-copilot%2Fgh-copilot-code-explain.png)
+
+#### Calculator classes
+
+##### pros
++ Created the classes once the prompt was specific.
+
+##### cons
+- Did miss out on a service annotation.
+- The prompt was tweaked a few times until all unit tests were passed so as a developer you need to have a high level idea about where you want what functionality.
 
 ### Sourcegraph Cody
 
@@ -100,6 +116,15 @@ All good things, couldn't fault it.
 - Was not able to give any explanation of the architecture of the directory and the explanation given was incorrect.
 ![cody-architecture-explain.png](sourcegraph-cody%2Fcody-architecture-explain.png)
 
+#### Calculator classes
+
+##### pros
++ Created generic classes not based on the tests.
+
+##### cons
+- Did not create classes based on tests so did not do what was intended.
+- Does not seem to be aware of files in the directory. Not sure if this is a disabled feature for free tier.
+
 #### Code explanation
 
 - Cody's Explain Code action was able to explain the code in the DemoApplication.java file.
@@ -129,6 +154,15 @@ All good things, couldn't fault it.
 #### Architecture
 
 + Chat was able to give an accurate description of the architecture of the directory.
+
+#### Calculator classes
+
+##### pros
++ Created generic classes not based on the tests.
+
+##### cons
+- Did not create classes based on tests so did not do what was intended. 
+- Missing the multiply and divide methods.
 
 ![amazon-q-architecture-explain.png](amazon-q%2Famazon-q-architecture-explain.png)
 
