@@ -1,0 +1,13 @@
+{
+  "transform": {
+    "^.+\\.ts$": "ts-jest",
+    "^.+\\.js$": [
+      "babel-jest",
+      {
+        "babelrc": false,
+        "presets": ["@babel/preset-env"]
+      }
+    ]
+  },
+  "transformIgnorePatterns": ["/node_modules/(?!node-fetch)/"]
+}
