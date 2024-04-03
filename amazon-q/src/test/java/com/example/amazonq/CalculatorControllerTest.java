@@ -19,7 +19,7 @@ class CalculatorControllerTest {
     private MockMvc mockMvc;
 
     @Mock
-    private CalculatorService calculatorService;
+    private CalculatorServiceImpl calculatorService;
 
     @BeforeEach
     public void setup() {

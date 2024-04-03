@@ -4,9 +4,10 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.jupiter.api.Test;
 
+
 class CalculatorServiceTest {
 
-    private CalculatorService calculatorService = new CalculatorService();
+    private final CalculatorServiceImpl calculatorService = new CalculatorServiceImpl(new Calculator());
 
     @Test
     void testAdd() {
