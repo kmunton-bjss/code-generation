@@ -7,6 +7,7 @@ See below for the prompts and results of the comparison test.
 - GitHub Copilot (https://github.com/features/copilot)
 - Sourcegraph Cody (https://sourcegraph.com/demo/cody)
 - Amazon Q CodeWhisperer (https://aws.amazon.com/codewhisperer/)
+- Intellij IDE plugins
 
 ## Application
 Each application was created using the spring boot CLI with the following command:
@@ -144,3 +145,4 @@ All good things, couldn't fault it.
 - Github Copilot can start generating new code/ missing test scenarios without any comment or method name, whereas Cody and Amazon Q seems to require a method name or comment to generate code.
 - Github Copilot Chat And Amazon Q are able to generate an accurate description of the architecture of the directory, Cody was not able to do this.
 - All tools were able to explain the code in a particular file.
+- All tools are available in the IDE and can answer coding questions.
