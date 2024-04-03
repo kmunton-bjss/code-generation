@@ -12,23 +12,23 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     @Override
-  public int add(int x, int y) {
-    return calculator.add(x, y);
-  }
+    public int add(int x, int y) {
+      return calculator.add(x, y);
+    }
 
-  @Override
-  public int subtract(int x, int y) {
-    return calculator.subtract(x, y);
-  }
+    @Override
+    public int subtract(int x, int y) {
+      return calculator.subtract(x, y);
+    }
 
-  @Override
-  public int multiply(int x, int y) {
-      return calculator.multiply(x, y);
-  }
+    @Override
+    public int multiply(int x, int y) {
+        return calculator.multiply(x, y);
+    }
 
-  @Override
-  public int divide(int x, int y) {
-      return calculator.divide(x, y);
-  }
+    @Override
+    public int divide(int x, int y) {
+        return calculator.divide(x, y);
+    }
 
 }
