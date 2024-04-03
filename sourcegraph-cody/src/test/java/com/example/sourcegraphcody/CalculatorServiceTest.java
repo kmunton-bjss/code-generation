@@ -10,22 +10,22 @@ public class CalculatorServiceTest {
     private CalculatorService calculatorService = new CalculatorService();
 
     @Test
-    public void testAdd() {
+    void testAdd() {
         assertThat(calculatorService.add(1, 2), is(3));
     }
 
     @Test
-    public void testSubtract() {
+    void testSubtract() {
         assertThat(calculatorService.subtract(2, 1), is(1));
     }
 
     @Test
-    public void testMultiply() {
+    void testMultiply() {
         assertThat(calculatorService.multiply(1, 2), is(2));
     }
 
     @Test
-    public void testDivide() {
+    void testDivide() {
         assertThat(calculatorService.divide(4, 2), is(2));
     }
 }
